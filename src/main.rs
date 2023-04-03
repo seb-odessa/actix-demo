@@ -22,7 +22,7 @@ async fn main() -> std::io::Result<()> {
             .service(echo)
             .route("/hey", web::get().to(manual_hello))
     })
-    .bind(("192.168.0.100", 8080))?
+    .bind(("192.168.0.128", 8888))?
     .run()
     .await
 }
